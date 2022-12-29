@@ -1,0 +1,119 @@
+body{
+  background-image: url("./assets/beautiful-sunset-beach-landscape-with-boat.jpg");
+}
+
+*{
+ box-sizing: border-box;
+}
+
+.Clima{
+  display: flex;
+  align-items: center;
+  padding: 10rem;
+  justify-content: center;
+ }
+
+ .App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  box-shadow: 2px 2px 8px rgb(0, 0, 0);
+  background-color: rgba(92, 88, 88, 0.493);
+  width: 500px;
+  height: 450px;
+  text-align: center;
+ 
+
+}
+.Contenido{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 40px;
+}
+
+.ClimaVariantes{
+ display: flex;
+ align-items: center;
+ gap: 2rem;
+ margin-bottom: -13rem;
+ color: blue;
+}
+
+span{
+  color: black;
+}
+.ClimaVariantes ul{
+  list-style-type: none;
+ 
+}
+.ClimaVariantes img{
+  width: 150px;
+}
+.ListaDos{
+  position: relative;
+  left: 5px;
+}
+
+.ListaUno{
+  position: relative;
+  left: 27px;
+}
+.ListaTres{
+  position: relative;
+  left: 19px ;
+}
+.Location{
+   position: relative;
+   bottom: 80px;
+   color: blue;
+}
+.Location h2{
+  text-align: center;
+}
+
+.BotonGrados{
+   position: relative;
+   bottom: -120px;
+}
+
+.BotonGrados button{
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+}
+
+.loader{
+   background-color: whitesmoke;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 100;
+}
+.loader.hide{
+  display: none;
+}
+.loader > svg{
+  width: 100px;
+  position: relative;
+  fill: red;
+  animation: load 1.5s infinite;
+}
+
+@keyframes load{
+  0% {
+    top: 0;
+  }
+  50%{
+    top: -30px;
+  }
+  100%{
+    top: 0;
+  }
+}
